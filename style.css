@@ -1,0 +1,161 @@
+*{
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container{
+    height: 500px;
+    background-color: #251B37;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.topic{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: rgb(221, 216, 216); */
+
+}
+.main-body-container{
+    margin-top: 30px;
+    padding: 10px;
+    height: 450px;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main-body-container .user-input{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    /* background-color: aquamarine; */
+}
+.main-body-container .equal{
+    height: 40%;
+    /* background-color: gainsboro; */
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.main-body-container .number .input-number::placeholder{
+    text-align: center;
+}
+.main-body-container #text-area{
+    height: 100%;
+    /* width: 100%; */
+    /* margin-left: 10px; */
+    outline: none;
+    padding: 10px 5px;
+    resize: none;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+}
+.main-body-container .user-input .number{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+.main-body-container .number .input-number{
+    /* width: 100%; */
+    height: 30px;
+    padding: 0 5px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.main-body-container .user-input .number .num{
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    background-color: #251B37;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+.main-body-container h4{
+    margin-bottom: 3px;    
+}
+.main-body-container .user-input .plaintext{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    position: relative;
+}
+.main-body-container .user-input .plaintext .plain-text-msg{
+    position: absolute;
+    display: flex;
+    background-color: #251B37;
+    left: 30px;
+    top: -8px;
+    width: 75px;
+    /* margin: 0px 10px; */
+    justify-content: center;
+}
+.main-body-container .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+
+}
+.main-body-container .buttons button{
+    height: 30px;
+    width: 90px;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-body-container .buttons button:hover{
+    font-weight: bold;
+    color:crimson;
+    box-shadow: 1px 1px 8px white;
+}
+.main-body-container .buttons button:active{
+    transform: scale(1.045);
+}
+.main-body-container .output .encryptedtext{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.main-body-container .output .encryptedtext .encrypted{
+    cursor: pointer;
+}
+.main-body-container .output .plain-text-opt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    background-color: #251B37;
+    width: 120px;
+}
